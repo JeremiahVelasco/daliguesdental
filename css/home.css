@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #454545 !important;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(15,15,15,0.7),rgba(15,15,15,0.6)), url('/assets/dd/IMG_1259.JPG');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1.5rem 3rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .logo {
+    color: #fff;
+}
+
+.nav .logo i {
+    color: #00b7ff;
+}
+
+.nav-links ul {
+    display: flex;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    margin-left: 2rem;
+    background: #00b7ff;
+    padding: 5px 8px;
+    border-radius: 20px;
+    transition: .1s;
+}
+
+.nav-links ul li a:hover {
+    background: transparent;
+    outline: 3px solid #00b7ff;
+}
+
+.main-content {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 90%;
+}
+
+.hero {
+    margin-top: 3rem;
+    position: relative;
+    display: flex;
+    height: 95%;
+    width: 90%;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.hero-text {
+    padding: 0 2rem;
+    color: #fff;
+    font-size: 38px;
+}
