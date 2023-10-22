@@ -66,6 +66,7 @@ header {
 
 .dropdown-menu {
     position: absolute;
+    z-index: 999;
     right: 2rem;
     top: 70px;
     height: 0;
@@ -78,7 +79,7 @@ header {
 }
 
 .dropdown-menu.open {
-    height: 150px;
+    height: 180px;
 }
 
 .dropdown-menu li {
@@ -187,6 +188,13 @@ header {
     transition-delay: 100ms;
 }
 
+.footer {
+    margin-top: 3rem;
+    background: #00b7ff69;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
 
 @media(max-width: 992px) {
     .nav .links {
@@ -265,3 +273,4 @@ header {
     }
 
 }
+

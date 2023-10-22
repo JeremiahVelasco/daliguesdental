@@ -78,7 +78,7 @@ header {
 }
 
 .dropdown-menu.open {
-    height: 150px;
+    height: 180px;
 }
 
 .dropdown-menu li {
@@ -265,4 +265,11 @@ header {
 
 .procedure-images img:hover {
     transform: scale(1.05);
+}
+
+.footer {
+    margin-top: 3rem;
+    background: #00b7ff69;
+    padding: 1rem 2rem;
+    text-align: center;
 }
