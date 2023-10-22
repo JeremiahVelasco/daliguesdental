@@ -16,26 +16,101 @@
     <header>
         <div class="nav">
             <div class="logo">
-                <h1><i class="fa-solid fa-tooth"></i> Caroline C. Daligues, D.M.D., Inc.</h1>
+                <h1><i class="fa-solid fa-tooth"></i>Caroline C. Daligues, D.M.D., Inc.</h1>
             </div>
-
-            <div class="nav-links">
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
+            <ul class = "links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
             </div>
         </div>
 
-        <div class="main-content">
-            <div class="hero">
-                <h2 class="hero-text">
-                    We welcome you to our practice conveniently located in the heart of Union Square, San Francisco where you will experience a friendly and caring environment focused on preventive care and education.
-                </h2>
-            </div>
+        <div class="dropdown-menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
         </div>
     </header>
+
+    <div class="main-content">
+        <div class="hero">
+            <h1 class="hero-text">
+                Welcome To Our Practice
+            </h1>
+            <p>
+                conveniently located in the heart of Union Square,
+                San Francisco where you will experience a friendly
+                and caring environment focused on preventive care
+                and education.
+            </p>
+        </div>
+    </div>
+
+    <div class="banner">
+        <h2>Experience a friendly and caring environment focused on preventive care and education</h2>
+        <p>
+            Our goal is to help preserve your natural teeth through optimum dental care. 
+            Our focus is your comfort and well-being. Dr. Daligues has extensive experience
+            in restorative and cosmetic dentistry as well as Invisalign to create the winning
+            smile you deserve. We are confident we can meet your dental needs to achieve a
+            healthy gums and a beautiful smile.
+        </p>
+    </div>
+
+    <div class="section1">
+        <div class="row ">
+            <img class="image hidden" src="/assets/dd/IMG_1248.JPG" alt="">
+            <img class="image hidden" src="/assets/dd/IMG_1100.JPG" alt="">
+        </div>
+
+        <div class="row">
+            <img class="image hidden" src="/assets/dd/FullSizeRender2.JPG" alt="">
+            <img class="image hidden" src="/assets/dd/IMG_1114.JPG" alt="">
+            <img class="image hidden" src="/assets/dd/IMG_2861.JPG" alt="">
+        </div>
+
+        <div class="row">
+            <img class="image hidden" src="/assets/dd/IMG_1250.JPG" alt="">
+            <img class="image hidden" src="/assets/dd/IMG_1247.JPG" alt="">
+        </div>
+    </div>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle-btn')
+        const toggleBtnIcon = document.querySelector('.toggle-btn i')
+        const dropDownMenu = document.querySelector('.dropdown-menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+
+
+
+
+        //ANIMATION
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry => {
+                console.log(entry)
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } else {
+                    entry.target.classList.remove('show');
+                }
+            }))
+        })
+
+
+        const hiddenElements = document.querySelectorAll('.hidden');
+        hiddenElements.forEach((el) => observer.observe(el));
+    </script>
 </body>
 
 </html>

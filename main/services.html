@@ -16,17 +16,24 @@
     <header>
         <div class="nav">
             <div class="logo">
-                <h1><i class="fa-solid fa-tooth"></i> Logo</h1>
+                <h1><i class="fa-solid fa-tooth"></i>Caroline C. Daligues, D.M.D., Inc.</h1>
             </div>
-
-            <div class="nav-links">
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
+            <ul class = "links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
             </div>
         </div>
+
+        <div class="dropdown-menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+        </div>
+    </header>
 
         <div class="main-content">
             <div class="title">
@@ -49,38 +56,50 @@
                         <li>It is comfortable because there is no metal or wires to cause gum irritations during treatment.</li>
                         <li>We use the iTero 3D scanner to diagnose malocclusion and record accurate digital models of our patients' teeth. </li>
                     </ul>
-                    <button id="invi-learn-more">Learn More</button>
+                    <a id="learnmore" href="/services/invisalign.html">Learn More</a>
                 </div>
 
-                <div class="invisalign-photo">
+                <div class="invisalign-photo hidden">
                     <img src="/assets/dd/IMG_1111.JPG" alt="">
                 </div>
             </div>
         </div>
 
         <div class="section1">
-            <div class="service-card" id="preventive">
+            <div class="service-card hidden" id="preventive">
                 <img class="card-bg" src="/assets/preventive.jpg" alt="">
                 <img class="card-icon" src="/assets/preventive-icon.png" alt="">
                 <h2 class="card-title">Preventive Dentistry</h2>
             </div>
 
-            <div class="service-card" id="restorative">
+            <div class="service-card hidden" id="restorative">
                 <img class="card-bg" src="/assets/restorative.jpg" alt="">
                 <img class="card-icon" src="/assets/restorative-icon.png" alt="">
                 <h2 class="card-title">Restorative Dentistry</h2>
             </div>
 
-            <div class="service-card" id="cosmetic">
+            <div class="service-card hidden" id="cosmetic">
                 <img class="card-bg" src="/assets/cosmetic.jpg" alt="">
                 <img class="card-icon" src="/assets/cosmetic-icon.png" alt="">
                 <h2 class="card-title">Cosmetic Dentistry</h2>
             </div>
         </div>
-    </header>
 
 
     <script>
+        const toggleBtn = document.querySelector('.toggle-btn')
+        const toggleBtnIcon = document.querySelector('.toggle-btn i')
+        const dropDownMenu = document.querySelector('.dropdown-menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+
         document.getElementById('preventive').addEventListener('click', function() {
             window.location.href = '/services/preventive.html';
         });
@@ -92,6 +111,22 @@
         document.getElementById('cosmetic').addEventListener('click', function() {
             window.location.href = '/services/cosmetic.html';
         });
+
+        //ANIMATION
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry => {
+                console.log(entry)
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } else {
+                    entry.target.classList.remove('show');
+                }
+            }))
+        })
+
+
+        const hiddenElements = document.querySelectorAll('.hidden');
+        hiddenElements.forEach((el) => observer.observe(el));
     </script>
 </body>
 

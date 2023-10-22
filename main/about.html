@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logo</title>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="/css/about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -15,26 +15,87 @@
     <header>
         <div class="nav">
             <div class="logo">
-                <h1><i class="fa-solid fa-tooth"></i> Logo</h1>
+                <h1><i class="fa-solid fa-tooth"></i>Caroline C. Daligues, D.M.D., Inc.</h1>
             </div>
-
-            <div class="nav-links">
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
+            <ul class = "links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
             </div>
         </div>
 
-        <div class="main-content">
-
+        <div class="dropdown-menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
         </div>
     </header>
+        <div class="main-content">
+            <h1>About</h1>
+
+            <div class="hero">
+                <div class="deets">
+                    <h2 class="name">Caroline C. Daligues, D.M.D.</h2><br>
+                    <p>
+                        Dr. Caroline Daligues began her practice in Union Square, San Francisco
+                        where she's been since 1998. She is a member of the American Dental
+                        Association, California Dental Association and San Francisco Dental
+                        Society. She has been serving patients in the San Francisco are for the
+                        last 18 years.  Her patients admire her thoroughness and skills.
+                        She is committed to continuing education for her to stay current and
+                        updated on procedures and technology so she can provide the best dental
+                        care her patients deserve. Her goal is to preserve your natural teeth,
+                        alleviate oral discomfort and improve the appearance of your smile.
+                        She believes that the smile is a reflection of the overall health and
+                        well being of an individual. She gives importance to preventive
+                        care because this is the foundation of the overall health of the
+                        oral cavity. If you want to feel good, stay healthy and look
+                        great throughout life, you might be surprised what a difference
+                        healthy teeth can make.
+                    </p>
+                </div>
+
+                <img class = "hero-image hidden" src="/assets/hero.jpeg" alt="">
+            </div>
+        </div>
+
+    <div class="banner">
+
+    </div>
 
 
     <script>
+        const toggleBtn = document.querySelector('.toggle-btn')
+        const toggleBtnIcon = document.querySelector('.toggle-btn i')
+        const dropDownMenu = document.querySelector('.dropdown-menu')
 
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+
+        //ANIMATION
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry => {
+                console.log(entry)
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } else {
+                    entry.target.classList.remove('show');
+                }
+            }))
+        })
+
+
+        const hiddenElements = document.querySelectorAll('.hidden');
+        hiddenElements.forEach((el) => observer.observe(el));
     </script>
 </body>
 
