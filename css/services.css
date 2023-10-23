@@ -89,7 +89,7 @@ header {
     justify-content: center;
 }
 
-.main-content {
+.main-content {    
     height: 60vh;
     padding: 0 2rem;
     color: #1c1c1c;
@@ -152,12 +152,15 @@ header {
 
 /*SECTION 1*/
 .section1 {
-    background: #e2e0e0;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     padding: 1rem 2rem;
     height: 50vh;
+}
+
+.service-card {
+    position: relative;
 }
 
 .service-card .card-bg {
@@ -260,6 +263,14 @@ header {
 }
 
 @media only screen and (max-width: 600px) {
+    .main-content {
+        height:fit-content;
+        padding-bottom: 2rem;
+    }
+
+    .main-content ul {
+        margin-bottom: 1rem;
+    }
     .logo h1 {
         font-size: 22px;
     }
@@ -273,6 +284,7 @@ header {
         display: flex;
         flex-direction: column;
         gap: 20px;
+        height: fit-content;
     }
 
     .invisalign img {
