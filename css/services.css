@@ -90,6 +90,7 @@ header {
 }
 
 .main-content {
+    height: 60vh;
     padding: 0 2rem;
     color: #1c1c1c;
 }
@@ -105,6 +106,17 @@ header {
 
 .invisalign {
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.invisalign h2 {
+    font-size: 34px;
+}
+
+.invisalign p {
+    font-size: 22px;
+    margin-bottom: 1rem;
 }
 
 .invisalign img {
@@ -114,9 +126,9 @@ header {
 }
 
 .invisalign ul li {
-    font-size: 14px;
+    font-size: 18px;
     list-style: circle;
-    line-height: 26px;
+    line-height: 30px;
     letter-spacing: 1.2px;
 }
 
@@ -145,12 +157,13 @@ header {
     align-items: center;
     justify-content: space-evenly;
     padding: 1rem 2rem;
+    height: 50vh;
 }
 
 .service-card .card-bg {
     border-radius: 20px;
-    height: 300px;
-    width: 350px;
+    height: 320px;
+    width: 370px;
     filter: brightness(.8);
     cursor: pointer;
     transition: all ease-out .3s;
