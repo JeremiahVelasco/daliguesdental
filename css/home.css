@@ -94,7 +94,7 @@ header {
 }
 
 .hero {
-    background: url('/assets/dd/IMG_1246.JPG');
+    background: url('/assets/dd/bg.png');
     filter: brightness(1.2);
     background-position: center;
     background-size: cover;
@@ -105,14 +105,14 @@ header {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    color: #1c1c1c;
+    color: #fff;
     border-radius: 15px;
     pointer-events: none;
 }
 
 
 .hero h1 {
-    font-size: 36px;
+    font-size: 48px;
     font-weight: 700;
 }
 
