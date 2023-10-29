@@ -330,3 +330,14 @@ header {
         width: 320px;
     }
 }
+
+@media only screen 
+and (min-width : 1224px) {
+    .logo {
+        font-size: 10px;
+    }
+
+    .nav .links {
+        gap: 1rem;
+    }
+}
