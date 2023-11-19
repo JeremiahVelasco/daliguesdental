@@ -105,67 +105,67 @@ nav {
 }
 
 #xray {
-    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/daliguesdental/assets/xray.jpg');
+    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/assets/xray.jpg');
     background-position: center;
     background-size: cover;
 }
 
 #sealants {
-    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/daliguesdental/assets/sealants.webp');
+    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/assets/sealants.webp');
     background-position: center;
     background-size: cover;
 }
 
 #visits {
-    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/daliguesdental/assets/visits.JPG');
+    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/assets/visits.JPG');
     background-position: center;
     background-size: cover;
 }
 
 #resinfillings {
-    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/daliguesdental/assets/fillings.jpeg');
+    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/assets/fillings.jpeg');
     background-position: center;
     background-size: cover;
 }
 
 #inlays {
-    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/daliguesdental/assets/inlays.png');
+    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/assets/inlays.png');
     background-position: center;
     background-size: cover;
 }
 
 #zirconia {
-    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/daliguesdental/assets/zirconia.jpeg');
+    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/assets/zirconia.jpeg');
     background-position: center;
     background-size: cover;
 }
 
 #bridgeworks {
-    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/daliguesdental/assets/bridgeworks.jpeg');
+    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/assets/bridgeworks.jpeg');
     background-position: center;
     background-size: cover;
 }
 
 #implants {
-    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/daliguesdental/assets/implants.jpeg');
+    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/assets/implants.jpeg');
     background-position: center;
     background-size: cover;
 }
 
 #dentures {
-    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/daliguesdental/assets/dentures.jpeg');
+    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/assets/dentures.jpeg');
     background-position: center;
     background-size: cover;
 }
 
 #veneers {
-    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/daliguesdental/assets/veneers.jpg');
+    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/assets/veneers.jpg');
     background-position: center;
     background-size: cover;
 }
 
 #whitening {
-    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/daliguesdental/assets/whitening.png');
+    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/assets/whitening.png');
     background-position: center;
     background-size: cover;
 }
