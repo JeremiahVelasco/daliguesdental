@@ -1,163 +1,231 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    list-style: none;
-    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(17, 17, 17);
 }
 
-body {
-    background: rgb(238, 238, 238);
-    min-height: 100vh;
-    justify-content: center;
-}
-
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: #1c1c1c;
-    font-size: 1rem;
-    padding: 5px 10px;
-    border-radius: 15px;
-    transition: ease .2s;
-}
-
-a:hover {
-    background-color: #00b7ff;
-    color: #fff;
-}
-
-header {
-    position: relative;
-    padding: .5rem 3rem;
-}
-
-.logo i {
-    color: #00b7ff;
-}
-
-.nav {
-    width: 100%;
-    height: 60px;
-    max-width: 1200px;
-    margin: 0 auto;
+nav {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    padding: 1.5rem 8%;
+    align-items: center;
 }
 
-.nav .links {
-    display: flex;
-    gap: 2rem;
+.logo img {
+    height: 80px;
 }
 
-.nav .toggle-btn {
-    color: #1c1c1c;
-    font-size: 1.5rem;
-    cursor: pointer;
-    display: none;
-}
-
-.dropdown-menu {
-    position: absolute;
-    z-index: 999;
-    right: 2rem;
-    top: 70px;
-    height: 0px;
-    width: 300px;
-    background: rgba(255, 255, 255, .8);
-    backdrop-filter: blur(15px);
-    border-radius: 10px;
-    overflow: hidden;
-    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.dropdown-menu.open {
-    height: 400px;
-}
-
-.dropdown-menu li {
-    padding: 0.7rem;
+.nav-links {
     display: flex;
     align-items: center;
-    justify-content: center;
+    list-style: none;
 }
 
-.main-content {
-    padding: 10px 6%;
+.nav-links img {
+    height: 32px;
+    border-radius: 10px;
+}
+
+.nav-links a {
+    padding: 8px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    border-bottom: 5px solid #19b2ef;
 }
 
 .hero {
-    background: url('/assets/dd/bg.png');
-    filter: brightness(1.2);
+    display: flex;
+    padding: 80px 4%;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(255,255,255,.98),rgba(255,255,255,.90)), url('assets/misc.jpg') no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    height: 85vh;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    color: #fff;
-    border-radius: 15px;
-    pointer-events: none;
 }
 
-
-.hero h1 {
-    font-size: 48px;
-    font-weight: 700;
-}
-
-.hero p {
-    font-size: 20px;
-    font-weight: 500;
+.hero .content {
     width: 60%;
 }
 
-.banner {
-    margin: 1.5rem 0;
-    text-align: center;
-    background: linear-gradient(rgba(15,15,15,.1),rgba(15,15,15,.1)),url('/assets/dd/IMG_1101.JPG');
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
+#company {
+    background: #19b2ef;
+    color: #ffffff;
+    display: inline;
+    padding: .5rem;
+    border-radius: 5px;
+    pointer-events: none;
+    font-size: 22px;
+}
+
+.hero .content h1 {
+    margin-top: 15px;
+    font-weight: 100;
+    font-size: 52px;
     pointer-events: none;
 }
 
+strong {
+    color: #19b2ef;
+}
+
+.hero .content #minor {
+    margin-top: 1rem;
+    font-size: 22px;
+    font-weight: 100;
+}
+
+.hero .content button {
+    margin-top: 80px;
+    width: 200px;
+    padding: .8rem;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #9c9c9c8f;
+    color: #ffffff;
+}
+
+.content button:hover {
+    outline: 3px solid #19b2ef;
+    background: none;
+    color: #19b2ef;
+}
+
+button:active {
+    transform: scale(1.05);
+}
+
+#cta {
+    background: #19b2ef;
+    color: #ffffff;
+}
+
+#cta:hover {
+    background: none;
+    color: #19b2ef;
+}
+
+.hero .image img {
+    height: 500px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 4%;
+}
+
+.service-card {
+    background-color: #e4e4e4;
+    width: 420px;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
+}
+
+.service-card:nth-child(odd) {
+    background-color: #19b2ef;
+}
+
+.service-card:nth-child(odd) h2, .service-card:nth-child(odd) p {
+    color: #fff;
+}
+
+.service-card h2 {
+    text-align: center;
+    font-size: 26px;
+}
+
+.service-card p {
+    margin-top: 1rem;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: .8px;
+    height: 150px;
+}
+
+.service-card a {
+    text-decoration: none;
+}
+
+#learn-more {
+    margin-top: 10px;
+    width: 100px;
+    padding: .5rem;
+    border: none;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.service-card:nth-child(even) button {
+    color: #19b2ef;
+    outline: 3px solid #19b2ef ;
+}
+
+.service-card:nth-child(odd) button {
+    outline: 3px solid #fff;
+    background: transparent;
+    color: #fff;
+}
+
+.service-card:nth-child(odd) button:hover {
+    outline: 3px solid #fff;
+    background: #fff;
+    color: #19b2ef;
+}
+
+.service-card:nth-child(even) button:hover {
+    background: #19b2ef;
+    color: #fff;
+}
+
+.banner {
+    height: 200px;
+    background: linear-gradient(rgba(45,45,45,.8), rgba(45,45,45,.6)), url('/daliguesdental/assets/dd/IMG_1251.JPG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .banner h2 {
-    margin: 1rem 0;
+    color: #fff;
+    font-weight: 500;
+    line-height: 2rem;
 }
 
-.banner p {
-    width: 75%;
-}
-
-.section1 {
+.gallery {
     display: flex;
     flex-direction: column;
 }
 
-.section1 .row {
+.gallery .row {
     display: flex;
     justify-content: space-evenly;
     padding: 1rem 0;
 }
 
-.section1 img {
+.gallery img {
     height: 450px;
     border-radius: 15px;
     box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
@@ -188,88 +256,134 @@ header {
     transition-delay: 100ms;
 }
 
-.footer {
-    margin-top: 3rem;
-    background: #00b7ff69;
-    padding: 1rem 2rem;
-    text-align: center;
+footer {
+    margin-top: 2rem;
+    height: 150px;
+    background: #e4e4e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
-@media(max-width: 992px) {
-    .nav .links {
-        display: none;
-    }
-    .nav .toggle-btn {
-        display: block;
-    }
-
-    .dropdown-menu {
-        display: block;
-    }
+footer nav {
+    display: flex;
+    justify-content: center;
 }
+
+.footer-links {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    gap: 15px;
+}
+
+.footer-links a {
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px 25px;
+    background: #19b2ef;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.footer-links a:hover {
+    outline: 3px solid #19b2ef;
+    color: #19b2ef;
+    background: none;
+}
+
 
 @media(max-width: 576px) {
-    .dropdown-menu {
-        left: 2rem;
-        width: unset;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .logo h1 {
-        font-size: 22px;
+    nav {
+        display: none;
     }
 
-    .hero {
-        background: url('/assets/dd/IMG_1246.JPG');
-        background-position: center;
-        background-size: cover;
+    .hero .image img {
+        display: none;
     }
 
-    .section1 {
-        display: grid;
-        place-items: center;
+    #company {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .hero .content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hero .content button {
+        margin-top: 25px;
+        width: 200px;
+        padding: .8rem;
+        border: none;
+        border-radius: 15px;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        background: #9c9c9c8f;
+        color: #ffffff;
+    }
+
+    .hero .content h1 {
+        font-size: 28px;
+        font-weight: 500;
+    }
+
+    .hero .content p {
+        font-size: 12px;
+        font-weight: 100;
+    }
+
+    .section1 .service-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding:2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 350px;
+        height: 300px;
+    }
+
+    #learn-more {
+        margin-top: 35px;
+    }
+
+    .gallery .row {
+        display: flex;
+        flex-direction: column;
         padding: 1rem 2rem;
         gap: 20px;
     }
 
-    .section1 img {
+    .gallery img {
         width: 100%;
         height: 100%;
     }
 
-    .hidden {
-        opacity: 1;
-        filter: blur(0);
-        transform: translateX(0);
+    footer {
+        display: flex;
+        height: 40vh;    
+        justify-content: center;
+        align-items: center;
     }
 
-    .section1 .row {
+    .footer-links {
         display: flex;
         flex-direction: column;
-        gap: 2rem;
-        padding: 1rem 0;
+        text-align: center;
+        gap: 35px;
     }
+}
 
-    .banner {
-        height: 100vh;
-        padding: 15px;
-        margin: 1.5rem 0;
-        background: linear-gradient(rgba(15,15,15,.4),rgba(15,15,15,.3)),url('/assets/dd/IMG_1101.JPG');
-        background-position: center;
-        background-size: cover;
-    }
-
-    .banner h2 {
-        margin: 1rem 0;
-    }
+@media only screen and (max-width: 600px) {
     
-    .banner p {
-        width: 100%;
-        font-size: 22px;
-    }
-
 }
 
 @media only screen 

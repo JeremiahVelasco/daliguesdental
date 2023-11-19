@@ -4,89 +4,42 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    list-style: none;
-    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
 }
 
-body {
-    background-color: #e4e4e4 !important;
-    min-height: 100vh;
-    justify-content: center;
-}
-
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: #1c1c1c;
-    font-size: 1rem;
-    padding: 5px 10px;
-    border-radius: 15px;
-    transition: ease .2s;
-}
-
-a:hover {
-    background-color: #00b7ff;
-    color: #fff;
-}
-
-header {
-    position: relative;
-    padding: .5rem 3rem;
-}
-
-.logo i {
-    color: #00b7ff;
-}
-
-.nav {
-    width: 100%;
-    height: 60px;
-    max-width: 1200px;
-    margin: 0 auto;
+nav {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    padding: 1.5rem 8%;
+    align-items: center;
 }
 
-.nav .links {
-    display: flex;
-    gap: 2rem;
+.logo img {
+    height: 80px;
 }
 
-.nav .toggle-btn {
-    color: #1c1c1c;
-    font-size: 1.5rem;
-    cursor: pointer;
-    display: none;
-}
-
-.dropdown-menu {
-    position: absolute;
-    z-index: 999;
-    right: 2rem;
-    top: 70px;
-    height: 0;
-    width: 300px;
-    background: rgba(255, 255, 255, .8);
-    backdrop-filter: blur(15px);
-    border-radius: 10px;
-    overflow: hidden;
-    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.dropdown-menu.open {
-    height: 400px;
-}
-
-.dropdown-menu li {
-    padding: 0.7rem;
+.nav-links {
     display: flex;
     align-items: center;
-    justify-content: center;
+    list-style: none;
+}
+
+.nav-links img {
+    height: 32px;
+    border-radius: 10px;
+}
+
+.nav-links a {
+    padding: 8px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+}
+
+.nav-links a:hover {
+    border-bottom: 5px solid #19b2ef;
 }
 
 .main-content {
@@ -152,67 +105,67 @@ header {
 }
 
 #xray {
-    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/assets/xray.jpg');
+    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/daliguesdental/assets/xray.jpg');
     background-position: center;
     background-size: cover;
 }
 
 #sealants {
-    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/assets/sealants.webp');
+    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/daliguesdental/assets/sealants.webp');
     background-position: center;
     background-size: cover;
 }
 
 #visits {
-    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/assets/visits.JPG');
+    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/daliguesdental/assets/visits.JPG');
     background-position: center;
     background-size: cover;
 }
 
 #resinfillings {
-    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/assets/fillings.jpeg');
+    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/daliguesdental/assets/fillings.jpeg');
     background-position: center;
     background-size: cover;
 }
 
 #inlays {
-    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/assets/inlays.png');
+    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/daliguesdental/assets/inlays.png');
     background-position: center;
     background-size: cover;
 }
 
 #zirconia {
-    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/assets/zirconia.jpeg');
+    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/daliguesdental/assets/zirconia.jpeg');
     background-position: center;
     background-size: cover;
 }
 
 #bridgeworks {
-    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/assets/bridgeworks.jpeg');
+    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/daliguesdental/assets/bridgeworks.jpeg');
     background-position: center;
     background-size: cover;
 }
 
 #implants {
-    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/assets/implants.jpeg');
+    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/daliguesdental/assets/implants.jpeg');
     background-position: center;
     background-size: cover;
 }
 
 #dentures {
-    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/assets/dentures.jpeg');
+    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/daliguesdental/assets/dentures.jpeg');
     background-position: center;
     background-size: cover;
 }
 
 #veneers {
-    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/assets/veneers.jpg');
+    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/daliguesdental/assets/veneers.jpg');
     background-position: center;
     background-size: cover;
 }
 
 #whitening {
-    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/assets/whitening.png');
+    background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.2)), url('/daliguesdental/assets/whitening.png');
     background-position: center;
     background-size: cover;
 }
@@ -269,30 +222,59 @@ header {
     transform: scale(1.05);
 }
 
-.footer {
-    margin-top: 3rem;
-    background: #00b7ff69;
-    padding: 1rem 2rem;
-    text-align: center;
+footer {
+    margin-top: 2rem;
+    height: 150px;
+    background: #e4e4e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media(max-width: 992px) {
-    .nav .links {
-        display: none;
-    }
-    .nav .toggle-btn {
-        display: block;
-    }
+footer nav {
+    display: flex;
+    justify-content: center;
+}
 
-    .dropdown-menu {
-        display: block;
-    }
+.footer-links {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    gap: 15px;
+}
+
+.footer-links a {
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px 25px;
+    background: #19b2ef;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.footer-links a:hover {
+    outline: 3px solid #19b2ef;
+    color: #19b2ef;
+    background: none;
 }
 
 @media(max-width: 576px) {
-    .dropdown-menu {
-        left: 2rem;
-        width: unset;
+    nav {
+        display: none;
+    }
+
+    footer {
+        display: flex;
+        height: 40vh;    
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 35px;
     }
 }
 

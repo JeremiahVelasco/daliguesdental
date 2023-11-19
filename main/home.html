@@ -5,115 +5,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caroline C. Daligues, D.M.D., Inc.</title>
-    <link rel="icon" href="/assets/icon.png">
-    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/daliguesdental/css/home.css">
+    <link rel="icon" href="/daliguesdental/assets/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
     <header>
-        <div class="nav">
+        <nav>
             <div class="logo">
-                <h1><i class="fa-solid fa-tooth"></i>Caroline C. Daligues, D.M.D., Inc.</h1>
+                <img src="/daliguesdental/assets/logo.png">
             </div>
-            <ul class = "links">
-                <li><a href="/main/home.html">Home</a></li>
-                <li><a href="/main/services.html">Services</a></li>
-                <li><a href="/services/invisalign.html">Invisalign</a></li>
-                <li><a href="/services/preventive.html">Preventive</a></li>
-                <li><a href="/services/restorative.html">Restorative</a></li>
-                <li><a href="/services/cosmetic.html">Cosmetic</a></li>
-                <li><a href="/main/about.html">About</a></li>
+            <ul class="nav-links">
+                <li><a href="/daliguesdental/main/home.html">Home</a></li>
+                <li><a href="/daliguesdental/services/invisalign.html">Invisalign</a></li>
+                <li><a href="/daliguesdental/services/preventive.html">Preventive</a></li>
+                <li><a href="/daliguesdental/services/restorative.html">Restorative</a></li>
+                <li><a href="/daliguesdental/services/cosmetic.html">Cosmetic</a></li>
+                <li><a href="/daliguesdental/main/about.html">About Us</a></li>
+                <li><a href="#"><i class="fa-solid fa-phone"></i> 415-362-4041</a></li>
             </ul>
-            <div class="toggle-btn">
-                <i class="fa-solid fa-bars"></i>
+        </nav>
+    </header>
+    <div class="hero">
+        <div class="content">
+            <p id="company">Caroline C. Daligues, D.M.D., Inc.</p>
+            <h1> Welcome to our practice conveniently located in the heart of <strong>Union Square, San Francisco</strong> where you will experience a <strong>friendly</strong> and <strong>caring</strong> environment focused on <strong>preventive care</strong> and <strong>education</strong></h1>
+            <p id="minor">Our focus is your <strong>comfort</strong> and <strong>well-being.</strong> <strong>Dr. Daligues</strong> has extensive experience in restorative and cosmetic dentistry as well as <strong>Invisalign</strong> to create the <strong>winning smile</strong> you deserve.</p>
+            <button id="cta">Invisalign</button>
+            <button>Contact Us</button>
+        </div>
+        <div class="image">
+            <img src="/daliguesdental/assets/visits.JPG" alt="">
+        </div>
+    </div>
+
+    <section class="section1">
+        <div class="service-container">
+            <div class="service-card">
+                <h2>Invisalign</h2>
+                <p>Invisalign is a popular treatment that uses clear, removable aligners to straighten teeth. It offers a discreet and comfortable alternative to traditional metal braces, allowing individuals to achieve a confident smile without the visible appearance of wires and brackets.</p>
+                <button id="learn-more"><a href="/daliguesdental/services/invisalign.html">Learn More</a></button>
+            </div>
+            <div class="service-card">
+                <h2>Preventive Dentistry</h2>
+                <p>Our goal is to prevent oral health issues from emerging.</p>
+                <button id="learn-more"><a href="/daliguesdental/services/preventive.html">Learn More</a></button>
+            </div>
+            <div class="service-card">
+                <h2>Restorative Dentistry</h2>
+                <p>Our goal is to restore the function and health of your teeth and give you a beautiful smile through different procedures.</p>
+                <button id="learn-more"><a href="/daliguesdental/services/restorative.html">Learn More</a></button>
+            </div>
+            <div class="service-card">
+                <h2>Cosmetic Dentistry</h2>
+                <p>Our goal is to enhance your smile and bring out the natural beauty in your teeth. We will utilize veneers and whitening to polish and fix the imperfections in your smile.</p>
+                <button id="learn-more"><a href="/daliguesdental/services/cosmetic.html">Learn More</a></button>
             </div>
         </div>
+    </section>
 
-        <div class="dropdown-menu">
-            <li><a href="/main/home.html">Home</a></li>
-            <li><a href="/main/services.html">Services</a></li>
-            <li><a href="/services/invisalign.html">Invisalign</a></li>
-            <li><a href="/services/preventive.html">Preventive</a></li>
-            <li><a href="/services/restorative.html">Restorative</a></li>
-            <li><a href="/services/cosmetic.html">Cosmetic</a></li>
-            <li><a href="/main/about.html">About</a></li>
-        </div>
-    </header>
+    <section class="banner">
+        <h2>Caroline C. Daligues D.M.D., Inc.</h2>
+        <h2>390 Post Street, Ste.1004</h2>
+        <h2>San Francisco, CA 94102</h2>
+    </section>
 
-    <div class="main-content">
-        <div class="hero">
-            <h1 class="hero-text">
-                Welcome To Our Practice
-            </h1>
-            <p>
-                conveniently located in the heart of Union Square,
-                San Francisco where you will experience a friendly
-                and caring environment focused on preventive care
-                and education.
-            </p>
-        </div>
-    </div>
-
-    <div class="banner">
-        <h2>Experience a friendly and caring environment focused on preventive care and education</h2>
-        <p>
-            Our goal is to help preserve your natural teeth through optimum dental care. 
-            Our focus is your comfort and well-being. Dr. Daligues has extensive experience
-            in restorative and cosmetic dentistry as well as Invisalign to create the winning
-            smile you deserve. We are confident we can meet your dental needs to achieve a
-            healthy gums and a beautiful smile.
-        </p>
-    </div>
-
-    <div class="section1">
+    <section class="gallery">
         <div class="row ">
-            <img class="image hidden" src="/assets/dd/IMG_1248.JPG" alt="">
-            <img class="image hidden" src="/assets/dd/IMG_1100.JPG" alt="">
+            <img class="image hidden" src="/daliguesdental/assets/dd/IMG_1248.JPG" alt="">
+            <img class="image hidden" src="/daliguesdental/assets/dd/IMG_1100.JPG" alt="">
         </div>
 
         <div class="row">
-            <img class="image hidden" src="/assets/dd/FullSizeRender2.JPG" alt="">
-            <img class="image hidden" src="/assets/dd/IMG_1114.JPG" alt="">
-            <img class="image hidden" src="/assets/dd/IMG_2861.JPG" alt="">
+            <img class="image hidden" src="/daliguesdental/assets/dd/FullSizeRender2.JPG" alt="">
+            <img class="image hidden" src="/daliguesdental/assets/dd/IMG_1114.JPG" alt="">
+            <img class="image hidden" src="/daliguesdental/assets/dd/IMG_2861.JPG" alt="">
         </div>
 
         <div class="row">
-            <img class="image hidden" src="/assets/dd/IMG_1250.JPG" alt="">
-            <img class="image hidden" src="/assets/dd/IMG_1247.JPG" alt="">
+            <img class="image hidden" src="/daliguesdental/assets/dd/IMG_1250.JPG" alt="">
+            <img class="image hidden" src="/daliguesdental/assets/dd/IMG_1247.JPG" alt="">
         </div>
-    </div>
+    </section>
 
-    <div class="footer">
-        <h2>Contact Us</h2>
-        <ul>
-            <li>Call: 415-362-4041</li>
-            <li>Email: cdaliguesdmd@sbcglobal.net</li>
-            <li>Address: 490 Post St STE 1004, San Francisco, CA 94102, 10th floor</li>
-        </ul>
-    </div>
+    <footer>
+        <nav>
+            <ul class="footer-links">
+                <li><a href="/daliguesdental/main/home.html">Home</a></li>
+                <li><a href="/daliguesdental/services/invisalign.html">Invisalign</a></li>
+                <li><a href="/daliguesdental/services/preventive.html">Preventive</a></li>
+                <li><a href="/daliguesdental/services/restorative.html">Restorative</a></li>
+                <li><a href="/daliguesdental/services/cosmetic.html">Cosmetic</a></li>
+                <li><a href="/daliguesdental/main/about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </footer>
 
     <script>
-        const toggleBtn = document.querySelector('.toggle-btn')
-        const toggleBtnIcon = document.querySelector('.toggle-btn i')
-        const dropDownMenu = document.querySelector('.dropdown-menu')
-
-        toggleBtn.onclick = function () {
-            dropDownMenu.classList.toggle('open')
-            const isOpen = dropDownMenu.classList.contains('open')
-
-            toggleBtnIcon.classList = isOpen
-            ? 'fa-solid fa-xmark'
-            : 'fa-solid fa-bars'
+        function submitAndChangeStyles() {
+            const battery = document.getElementById('battery');
+            const form = document.getElementById('battery-form');
+            if (battery) {
+                battery.classList.add('animate');
+                form.classList.add('animate');
+            }
         }
 
-
-
-
-        //ANIMATION
-        const observer = new IntersectionObserver((entries) => {
+                const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry => {
                 console.log(entry)
                 if (entry.isIntersecting) {
