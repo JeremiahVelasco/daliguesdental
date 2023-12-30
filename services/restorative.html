@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caroline C. Daligues, D.M.D., Inc.</title>
-    <link rel="icon" href="/assets/logo.png">
-    <link rel="stylesheet" href="/css/dentistry.css">
+    <link rel="icon" href="../assets/logo.png">
+    <link rel="stylesheet" href="../css/dentistry.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -16,133 +16,74 @@
     <header>
         <nav>
             <div class="logo">
-                <img src="/assets/logo.png">
+                <img src="../assets/logo.png">
             </div>
             <ul class="nav-links">
-                <li><a href="/main/home.html">Home</a></li>
-                <li><a href="/services/invisalign.html">Invisalign</a></li>
-                <li><a href="/services/preventive.html">Preventive</a></li>
-                <li><a href="/services/restorative.html">Restorative</a></li>
-                <li><a href="/services/cosmetic.html">Cosmetic</a></li>
-                <li><a href="/main/about.html">About Us</a></li>
-                <li><a href="#"><i class="fa-solid fa-phone"></i> 415-362-4041</a></li>
+                <li><a href="../main/home.html">Home</a></li>
+                <li><a href="../services/invisalign.html">Invisalign</a></li>
+                <li><a href="../services/preventive.html">Preventive</a></li>
+                <li><a href="../services/restorative.html">Restorative</a></li>
+                <li><a href="../services/cosmetic.html">Cosmetic</a></li>
+                <li><a href="../main/about.html">About Us</a></li>
+                <li id="contact-num"><i class="fa-solid fa-phone"></i> 415-362-4041</li>
             </ul>
         </nav>
     </header>
 
         <div class="main-content">
             <h2>Restorative Services</h2>
-            <div class="row">
-                <div class="preventive-container">
-                    <div class="card" id="resinfillings">
-                        <div class="card-title">
-                            <h2> Composite Resin Fillings</h2>
-                        </div>
-
-                        <div class="card-desc">
-                            <p>
-                                Tooth-colored restorations that offer an aesthetic alternative
-                                to traditional amalgam fillings. We use composite fillings to
-                                repair decayed or broken teeth as well as to enhance the
-                                appearance of any tooth. Composites bond strongly with tooth
-                                structures, preventing future decay.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card" id="inlays">
-                        <div class="card-title">
-                            <h2>Porcelain Onlays and Inlays</h2>
-                        </div>
-
-                        <div class="card-desc">
-                            <p>
-                                Conservative restorations that preserve healthy dental tissue
-                                and are excellent alternatives to full crowns or caps.
-                                They will be able to preserve healthy tissues of the tooth as
-                                much as possible. They are also known as indirect fillings,
-                                meaning it requires a mold to fabricated them. They also treat
-                                tooth decay, broken teeth, and provide a precise fit and
-                                aesthetic since they won't discolor. In addition, they can
-                                also strengthen a damaged tooth.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card" id="zirconia">
-                        <div class="card-title">
-                            <h2>Dental Crowns- Porcelain and Zirconia</h2>
-                        </div>
-
-                        <div class="card-desc">
-                            <p>
-                                These are used to restore teeth that are heavily damaged from
-                                tooth decay and are able to restore broken teeth. They are
-                                also used to protect cracked teeth and protect a root canal
-                                treated tooth. Restorations require fabrication from a
-                                laboratory thus requiring 2-3 visits.
-                            </p>
-                        </div>
-                    </div>
+            <div class="service-row">
+                <div class="service-text">
+                    <h3>Composite Resin Fillings</h3>
+                    <p>Tooth-colored restorations that offer an aesthetic alternative to traditional amalgam fillings. We use composite fillings to repair decayed or broken teeth as well as to enhance the appearance of any tooth. Composites bond strongly with tooth structures, preventing future decay.</p>
+                </div>
+                <div class="service-image">
+                    <img src="../assets/fillings.jpeg" alt="x-ray image">
                 </div>
             </div>
-
-            <div class="row">
-                <div class="preventive-container">
-                    <div class="card" id="bridgeworks">
-                        <div class="card-title">
-                            <h2>Fixed Bridgeworks</h2>
-                        </div>
-
-                        <div class="card-desc">
-                            <p>
-                                Bridgeworks are used to replace missing teeth. They are able to
-                                help balance a normal bite, preventing unnatural stress on the
-                                dental ridge, supra eruption, and prevent drifting and tilting
-                                of adjacent teeth. They will also prevent formation of decay in
-                                abnormal areas and help delay the onset of periodontal disease.
-                                These require 2-3 visits due to laboratory fabrication and will
-                                be cemented permanently. They are comfortable, durable, and
-                                enduring.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card" id="implants">
-                        <div class="card-title">
-                            <h2>Restoration of Dental Implants </h2>
-                        </div>
-
-                        <div class="card-desc">
-                            <p>
-                                Implants are intended for patients who have lost one or
-                                more of their natural teeth. The implant will be surgically
-                                placed in the jaw bone and can be restored through attaching
-                                an artificial tooth crown to the implant. After it is surgically
-                                placed into the jaw bone, a 3-6 month wait is necessary to
-                                allow the bone tissue to grow around the implant.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card" id="dentures">
-                        <div class="card-title">
-                            <h2>Removable/Complete Dentures</h2>
-                        </div>
-
-                        <div class="card-desc">
-                            <p>
-                                Dentures are intended to replace missing teeth to avoid
-                                shifting. Shifting can cause the mouth to sink in and the
-                                face to change appearance. The lips may thin and straighten,
-                                the chin may jut out and upward, and pouches may appear on
-                                the sides of the jaw. Dentures are artificial teeth/pontics
-                                attached to a base and it precisely fits the mouth. It
-                                consists of several appointments, however. It is also
-                                removable and convenient for the patient to clean.
-                            </p>
-                        </div>
-                    </div>
+            <div class="service-row">
+                <div class="service-image">
+                    <img src="../assets/inlays.png" alt="x-ray image">
+                </div>
+                <div class="service-text">
+                    <h3>Porcelain Onlays and Inlays</h3>
+                    <p>Conservative restorations that preserve healthy dental tissue and are excellent alternatives to full crowns or caps. They will be able to preserve healthy tissues of the tooth as much as possible. They are also known as indirect fillings, meaning it requires a mold to fabricated them. They also treat tooth decay, broken teeth, and provide a precise fit and aesthetic since they won't discolor. In addition, they can also strengthen a damaged tooth.</p>
+                </div>
+            </div>
+            <div class="service-row">
+                <div class="service-text">
+                    <h3>Dental Crowns- Porcelain and Zirconia</h3>
+                    <p>These are used to restore teeth that are heavily damaged from tooth decay and are able to restore broken teeth. They are also used to protect cracked teeth and protect a root canal treated tooth. Restorations require fabrication from a laboratory thus requiring 2-3 visits.</p>
+                </div>
+                <div class="service-image">
+                    <img src="../assets/zirconia.jpeg" alt="x-ray image">
+                </div>
+            </div>
+            <div class="service-row">
+                <div class="service-image">
+                    <img src="../assets/bridgeworks.jpeg" alt="x-ray image">
+                </div>
+                <div class="service-text">
+                    <h3>Fixed Bridgeworks</h3>
+                    <p>Bridgeworks are used to replace missing teeth. They are able to help balance a normal bite, preventing unnatural stress on the dental ridge, supra eruption, and prevent drifting and tilting of adjacent teeth. They will also prevent formation of decay in abnormal areas and help delay the onset of periodontal disease. These require 2-3 visits due to laboratory fabrication and will be cemented permanently. They are comfortable, durable, and enduring.</p>
+                </div>
+            </div>
+            <div class="service-row">
+                <div class="service-text">
+                    <h3>Restoration of Dental Implants </h3>
+                    <p>Implants are intended for patients who have lost one or more of their natural teeth. The implant will be surgically placed in the jaw bone and can be restored through attaching an artificial tooth crown to the implant. Implants can be designed for one or more individual teeth, a partial or full denture. After it is surgically placed into the jaw bone, a 3-6 month wait is necessary to allow the bone tissue to grow around the implant. The length of time that implants will last depends not only the skill with which they are placed, but also on the condition of the underlying bone and soft tissue.</p>
+                </div>
+                <div class="service-image">
+                    <img src="../assets/implants.jpeg" alt="x-ray image">
+                </div>
+            </div>
+            <div class="service-row">
+                <div class="service-image">
+                    <img src="../assets/dentures.jpeg" alt="x-ray image">
+                </div>
+                <div class="service-text">
+                    <h3>Removable/Complete Dentures</h3>
+                    <p>Dentures are intended to replace missing teeth to avoid shifting. Shifting can cause the mouth to sink in and the face to change appearance. The lips may thin and straighten, the chin may jut out and upward, and pouches may appear on the sides of the jaw. Dentures are artificial teeth/pontics attached to a base and it precisely fits the mouth. It consists of several appointments, however. It is also removable and convenient for the patient to clean. </p>
                 </div>
             </div>
         </div>
@@ -158,12 +99,12 @@
 
             <div class="procedure-images">
                 <div class="image-holder">
-                    <img src="/assets/dd/IMG_1143.JPG" alt="">
+                    <img src="../assets/dd/IMG_1143.JPG" alt="">
                     <h3>Before</h3>
                 </div>
 
                 <div class="image-holder">
-                    <img src="/assets/dd/IMG_1144.JPG" alt="">
+                    <img src="../assets/dd/IMG_1144.JPG" alt="">
                     <h3>After</h3>
                 </div>
             </div>
@@ -177,12 +118,12 @@
 
             <div class="procedure-images">
                 <div class="image-holder">
-                    <img src="/assets/dd/IMG_1145.JPG" alt="">
+                    <img src="../assets/dd/IMG_1145.JPG" alt="">
                     <h3>Before</h3>
                 </div>
 
                 <div class="image-holder">
-                    <img src="/assets/dd/IMG_1146.JPG" alt="">
+                    <img src="../assets/dd/IMG_1146.JPG" alt="">
                     <h3>After</h3>
                 </div>
             </div>
@@ -196,12 +137,12 @@
 
             <div class="procedure-images">
                 <div class="image-holder">
-                    <img src="/assets/dd/IMG_1147.JPG" alt="">
+                    <img src="../assets/dd/IMG_1147.JPG" alt="">
                     <h3>Before</h3>
                 </div>
 
                 <div class="image-holder">
-                    <img src="/assets/dd/IMG_1148.JPG" alt="">
+                    <img src="../assets/dd/IMG_1148.JPG" alt="">
                     <h3>After</h3>
                 </div>
             </div>
@@ -215,12 +156,12 @@
 
             <div class="procedure-images">
                 <div class="image-holder">
-                    <img src="/assets/dd/IMG_1149.JPG" alt="">
+                    <img src="../assets/dd/IMG_1149.JPG" alt="">
                     <h3>Before</h3>
                 </div>
 
                 <div class="image-holder">
-                    <img src="/assets/dd/IMG_1150.JPG" alt="">
+                    <img src="../assets/dd/IMG_1150.JPG" alt="">
                     <h3>After</h3>
                 </div>
             </div>
@@ -234,12 +175,12 @@
 
             <div class="procedure-images">
                 <div class="image-holder">
-                    <img src="/assets/dd/IMG_1278.JPG" alt="">
+                    <img src="../assets/dd/IMG_1278.JPG" alt="">
                     <h3>Before</h3>
                 </div>
 
                 <div class="image-holder">
-                    <img src="/assets/dd/IMG_1283.JPG" alt="">
+                    <img src="../assets/dd/IMG_1283.JPG" alt="">
                     <h3>After</h3>
                 </div>
             </div>
@@ -249,12 +190,12 @@
     <footer>
         <nav>
             <ul class="footer-links">
-                <li><a href="/main/home.html">Home</a></li>
-                <li><a href="/services/invisalign.html">Invisalign</a></li>
-                <li><a href="/services/preventive.html">Preventive</a></li>
-                <li><a href="/services/restorative.html">Restorative</a></li>
-                <li><a href="/services/cosmetic.html">Cosmetic</a></li>
-                <li><a href="/main/about.html">About Us</a></li>
+                <li><a href="../main/home.html">Home</a></li>
+                <li><a href="../services/invisalign.html">Invisalign</a></li>
+                <li><a href="../services/preventive.html">Preventive</a></li>
+                <li><a href="../services/restorative.html">Restorative</a></li>
+                <li><a href="../services/cosmetic.html">Cosmetic</a></li>
+                <li><a href="../main/about.html">About Us</a></li>
             </ul>
         </nav>
     </footer>

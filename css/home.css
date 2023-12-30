@@ -41,12 +41,19 @@ nav {
     border-bottom: 5px solid #19b2ef;
 }
 
+#contact-num {
+    padding: 8px 25px;
+    font-size: 18px;
+    font-weight: 500;
+    pointer-events: none;
+}
+
 .hero {
     display: flex;
     padding: 80px 4%;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(255,255,255,.98),rgba(255,255,255,.90)), url('assets/misc.jpg') no-repeat;
+    background: linear-gradient(rgba(255,255,255,.98),rgba(255,255,255,.90)), url('..assets/misc.jpg') no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -75,20 +82,21 @@ nav {
 
 strong {
     color: #19b2ef;
+    font-weight: 500;
 }
 
 .hero .content #minor {
     margin-top: 1rem;
-    font-size: 22px;
-    font-weight: 100;
+    font-size: 18px;
+    font-weight: 300;
 }
 
 .hero .content button {
-    margin-top: 80px;
+    margin: 80px 5px 0 5px;
     width: 200px;
     padding: .8rem;
     border: none;
-    border-radius: 15px;
+    border-radius: 5px;
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
@@ -118,35 +126,44 @@ button:active {
 
 .hero .image img {
     height: 500px;
-    border-radius: 15px;
-    box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
+    border-radius: 5px;
+}
+
+.section1 {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
 }
 
 .service-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    padding: 15px 4%;
+    align-items: center;
+}
+
+.sec1Title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
 
 .service-card {
-    background-color: #e4e4e4;
-    width: 420px;
+    width: 300px;
     padding: 1rem;
-    border-radius: 15px;
-    box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
+    border-radius: 5px;
+    text-align: center;
 }
 
-.service-card:nth-child(odd) {
-    background-color: #19b2ef;
-}
-
-.service-card:nth-child(odd) h2, .service-card:nth-child(odd) p {
-    color: #fff;
+.card-icons {
+    height: 80px;
+    width: 80px;
 }
 
 .service-card h2 {
-    text-align: center;
-    font-size: 26px;
+    font-size: 24px;
 }
 
 .service-card p {
@@ -172,31 +189,10 @@ button:active {
     cursor: pointer;
 }
 
-.service-card:nth-child(even) button {
-    color: #19b2ef;
-    outline: 3px solid #19b2ef ;
-}
-
-.service-card:nth-child(odd) button {
-    outline: 3px solid #fff;
-    background: transparent;
-    color: #fff;
-}
-
-.service-card:nth-child(odd) button:hover {
-    outline: 3px solid #fff;
-    background: #fff;
-    color: #19b2ef;
-}
-
-.service-card:nth-child(even) button:hover {
-    background: #19b2ef;
-    color: #fff;
-}
 
 .banner {
     height: 200px;
-    background: linear-gradient(rgba(45,45,45,.8), rgba(45,45,45,.6)), url('/assets/dd/IMG_1251.JPG');
+    background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.6)), url('../assets/dd/IMG_1251.JPG');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -209,7 +205,7 @@ button:active {
 }
 
 .banner h2 {
-    color: #fff;
+    color: #000;
     font-weight: 500;
     line-height: 2rem;
 }
@@ -227,7 +223,7 @@ button:active {
 
 .gallery img {
     height: 450px;
-    border-radius: 15px;
+    border-radius: 5px;
     box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
 }
 
@@ -282,7 +278,7 @@ footer nav {
     text-decoration: none;
     padding: 10px 25px;
     background: #19b2ef;
-    border-radius: 15px;
+    border-radius: 5px;
     color: #fff;
 }
 
